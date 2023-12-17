@@ -105,7 +105,7 @@ ON a.id = partners.person1_id
 JOIN famous_people b 
 ON partners.person2_id = b.id 
 ;
-# Where do the famous people originate from? Which famous people visit their origin country often? Show the full name and origin place of the famous people who often visit their origin country.  
+# Show the full name and origin place of the famous people who often visit their origin country.  
 SELECT famous_people.fullname, origins.place 
 FROM famous_people 
 JOIN origins
