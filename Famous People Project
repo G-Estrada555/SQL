@@ -1,0 +1,120 @@
+/* Create table about the people and what they do here */
+CREATE TABLE famous_people (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    fullname TEXT,
+    job TEXT);
+    
+INSERT INTO famous_people (fullname, job) VALUES ("John Doe", "actor");
+INSERT INTO famous_people (fullname, job) VALUES ("Little Bow", "singer");
+INSERT INTO famous_people (fullname, job) VALUES ("Straw Berry", "author");
+INSERT INTO famous_people (fullname, job) VALUES ("Mike Boo", "comedian");
+INSERT INTO famous_people (fullname, job) VALUES ("Super Star", "singer");
+INSERT INTO famous_people (fullname, job) VALUES ("Six Burritos", "painter");
+INSERT INTO famous_people (fullname, job) VALUES ("Manny ManMan", "author");
+INSERT INTO famous_people (fullname, job) VALUES ("Pink Lalala", "actor");
+INSERT INTO famous_people (fullname, job) VALUES ("Power Ranger", "comedian");
+INSERT INTO famous_people (fullname, job) VALUES ("Ben Benny", "author");
+INSERT INTO famous_people (fullname, job) VALUES ("No Yes", "singer");
+INSERT INTO famous_people (fullname, job) VALUES ("Ban Nana", "comedian");
+INSERT INTO famous_people (fullname, job) VALUES ("Koco Puffs", "actor");
+INSERT INTO famous_people (fullname, job) VALUES ("Jen Green", "painter");
+INSERT INTO famous_people (fullname, job) VALUES ("Quack Quack", "comedian");
+INSERT INTO famous_people (fullname, job) VALUES ("Money Woah", "singer");
+
+CREATE TABLE hobbies (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    person_id INTEGER,
+    hobby TEXT,
+    enjoyable TEXT);
+
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES (1, "swimming", "yes");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES (1, "driving", "no");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES (1, "watching tv", "yes");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES ( 2, "painting", "yes");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES ( 2, "vlogging", "yes");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES ( 2, "zumba", "yes");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES ( 3, "crying", "yes");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES (3,"cycling", "no");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES (3,"ice sculpting", "yes");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES (4, "reading", "yes");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES (4, "star gazing", "yes");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES (4, "watching youtube", "yes");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES (5, "crying", "no");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES (5, "watching youtube", "no");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES (5, "knitting", "yes");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES (6, "reading", "yes");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES (6,"cycling", "yes");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES (7, "knitting", "yes");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES (7, "piano", "yes");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES (8, "star gazing", "no");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES (8, "driving", "yes");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES (8, "watching tv", "no");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES (9, "watching youtube", "yes");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES (9, "crying", "yes");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES (10, "swimming", "no");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES ( 10, "vlogging", "no");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES ( 10, "zumba", "yes");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES ( 11, "climbing", "yes");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES ( 11, "golf", "yes");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES ( 12, "crying", "no");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES ( 12, "ice sculpting", "yes");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES ( 13, "knitting", "yes");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES ( 13, "driving", "no");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES (14, "watching tv", "yes");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES ( 14, "painting", "no");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES (15, "crying", "yes");
+INSERT INTO hobbies (person_id, hobby, enjoyable) VALUES ( 15, "painting", "yes");
+
+CREATE TABLE origins (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    place TEXT,
+    visit_often TEXT);
+INSERT INTO origins (place, visit_often) VALUES ("Australia", "no");
+INSERT INTO origins (place, visit_often) VALUES ("Britain", "yes");
+INSERT INTO origins (place, visit_often) VALUES ("Japan", "yes");
+INSERT INTO origins (place, visit_often) VALUES ("Greenland", "no");
+INSERT INTO origins (place, visit_often) VALUES ("South Korea", "yes");
+INSERT INTO origins (place, visit_often) VALUES ("Mexico", "yes");
+INSERT INTO origins (place, visit_often) VALUES ("Brazil", "no");
+INSERT INTO origins (place, visit_often) VALUES ("Ireland", "yes");
+INSERT INTO origins (place, visit_often) VALUES ("Greenland", "yes");
+INSERT INTO origins (place, visit_often) VALUES ("Spain", "no");
+INSERT INTO origins (place, visit_often) VALUES ("Australia", "yes");
+INSERT INTO origins (place, visit_often) VALUES ("Mexico", "yes");
+INSERT INTO origins (place, visit_often) VALUES ("United States", "yes");
+INSERT INTO origins (place, visit_often) VALUES ("Greenland", "yes");
+INSERT INTO origins (place, visit_often) VALUES ("Japan", "yes");
+INSERT INTO origins (place, visit_often) VALUES ("Greenland", "no");
+
+CREATE TABLE partners (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    person1_id INTEGER,
+    person2_id INTEGER);
+INSERT INTO partners (person1_id, person2_id) VALUES (1, 3);
+INSERT INTO partners (person1_id, person2_id) VALUES (2, 5);
+INSERT INTO partners (person1_id, person2_id) VALUES (13, 6);
+INSERT INTO partners (person1_id, person2_id) VALUES (11, 9);
+INSERT INTO partners (person1_id, person2_id) VALUES (16, 4);
+INSERT INTO partners (person1_id, person2_id) VALUES (12, 15)
+;
+# Some of the people listed in the table are married to each other. Show their names next to the names of their partners.   
+SELECT a.fullname, b.fullname
+FROM partners
+JOIN famous_people a
+ON a.id = partners.person1_id
+JOIN famous_people b 
+ON partners.person2_id = b.id 
+;
+# Where do the famous people originate from? Which famous people visit their origin country often? Show the full name and origin place of the famous people who often visit their origin country.  
+SELECT famous_people.fullname, origins.place 
+FROM famous_people 
+JOIN origins
+ON famous_people.id = origins.id
+WHERE visit_often = "yes"
+
+# Which famous people wrote down crying as their hobby? 
+SELECT famous_people.fullname, hobbies.hobby
+FROM hobbies
+JOIN famous_people 
+ON famous_people.id = hobbies.person_id
+WHERE hobbies.hobby = "crying"
